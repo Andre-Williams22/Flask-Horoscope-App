@@ -1,0 +1,29 @@
+{% extends "base.html"}
+
+{% block title %}
+Get a Horoscope or two or three
+{% endblock %}
+
+{% block content %}
+<h1> {{section}}</h1>
+<h2> {{greeting}} </h2>
+ <form action='/horoscope'>
+        <p>
+            What is your name?
+            <input type="text" name="name"/>
+        </p>
+        <p>
+            <input type="checkbox" name="show_horoscopes"/>
+            Show Horoscopes
+        </p>
+        <p>
+            How many compliments?
+            <select name="num_horoscopes">
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </p>
+        <input type="submit">
+    </form>
+    {%endblock%}

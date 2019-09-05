@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+
+{% block title %}
+    Receive Compliments!
+{% endblock %}
+
+<%block content%>
+<p>
+	Hello there, {{ name }}!
+
+{% if show_horoscopes %}
+    You are so:
+    <ul>
+    	{% for horoscope in horoscopes%}
+    		<li> {{ horoscope}} </li>
+    	{% endfor %}
+    </ul>
+
+{% else %}
+    Have a nice day!
+{% endif %}
+
+</p>
+
