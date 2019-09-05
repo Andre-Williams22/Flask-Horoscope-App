@@ -1,1 +1,1 @@
-# First-Flask-App
+# Flask-Horoscope-App
